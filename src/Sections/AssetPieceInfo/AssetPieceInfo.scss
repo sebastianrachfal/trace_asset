@@ -1,0 +1,211 @@
+.asset-piece-info {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  margin-top: 5px;
+  &__container {
+    margin: 5px;
+    width: 100%;
+    background-color: white;
+    border-top: 16px solid #007fbf;
+    border-radius: 5px 5px 2px 2px;
+    box-shadow: 1px 1px 4px 3px #0000000a;
+  }
+  &__heading {
+    width: 100%;
+    padding: 13px 37px;
+    border-bottom: 1px solid #d8e1ef;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4d5a68;
+    font-size: 23px;
+    text-shadow: 0 0 0.5px #4d5a68;
+    &__button {
+      border: 2px solid #736cc7;
+      border-radius: 30px;
+      padding: 8px 20px;
+      background: white;
+      color: #736cc7;
+      outline: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 600;
+      & > svg {
+        width: 12px;
+        height: 12px;
+        fill: #736cc7;
+        margin-right: 10px;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    display: flex;
+    padding: 8px 16px;
+  }
+  &__data {
+    flex: 7;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__entry {
+    width: calc(32% - 34px);
+    margin: 13px 21px;
+    &-name {
+      font-size: 19px;
+      font-weight: bold;
+      color: #4d5a68;
+      text-shadow: 0 0 0.5px #4d5a68;
+    }
+    &-data {
+      font-size: 18px;
+      margin-top: 22px;
+      color: #4d5a68;
+      text-shadow: 0 0 0.5px #4d5a68;
+    }
+  }
+}
+.traceability {
+  position: relative;
+  width: 120px;
+  height: 120px;
+
+  &__percent {
+    font-weight: bolder;
+    font-size: 30px;
+    color: #05c155;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__container {
+    margin: 17px 0px;
+
+    flex: 2;
+    height: 170px;
+    &-inner {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+.chain-view {
+  margin: 20px 80px;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f7f7f7;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #399af2;
+    border-radius: 5px;
+  }
+  &__container {
+    width: 1485px;
+  }
+  &__line {
+    &-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__chart {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__column {
+    width: 420px;
+    z-index: 2;
+  }
+  &__item {
+    background-color: white;
+    //padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 3px;
+    width: 100%;
+    box-shadow: 1px 1px 4px 3px #0000000a;
+    margin-top: 30px;
+    &__spacer {
+      height: 1px;
+      width: 100%;
+      margin: 10px 0px;
+      background-color: #d6d6d6;
+    }
+    &__container {
+      width: 100%;
+      margin-top: 20px;
+    }
+    &__heading {
+      font-size: 24px;
+      color: #002a40;
+      padding: 20px;
+    }
+    &__entry {
+      padding: 8px 20px;
+      display: flex;
+      font-size: 17px;
+      color: #4d5a68;
+
+      &-name {
+        font-size: 19px;
+        font-weight: bold;
+        width: 130px;
+      }
+    }
+    &__triangle {
+      width: 17px;
+      height: 17px;
+      &-container {
+        width: 100%;
+        height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+  &__section {
+    background-color: white;
+    padding: 25px 34px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    width: 420px; //27%
+    box-shadow: 1px 1px 4px 3px #0000000a;
+    &__text {
+      color: #002a40;
+      font-size: 28px;
+      font-weight: bold;
+      &--num {
+        color: #3c89ff;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
