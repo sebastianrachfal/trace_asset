@@ -1,6 +1,6 @@
 ## Description
 
-The project contains a UI for a tracing application.
+The project contains a UI for a tracing application. The main graph is created dynamically based on data retrieved from the server.
 It's available to browse at [trace.sebastianrachfal.now.sh](https://trace.sebastianrachfal.now.sh).
 
 ## Available Scripts
