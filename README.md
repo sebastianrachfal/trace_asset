@@ -1,7 +1,7 @@
 ## Description
 
 The project contains a UI for a tracing application.
-It's available to browse at trace.sebastianrachfal.now.sh
+It's available to browse at [trace.sebastianrachfal.now.sh](trace.sebastianrachfal.now.sh).
 
 ## Available Scripts
 
